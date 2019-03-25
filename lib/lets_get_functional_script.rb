@@ -7,7 +7,10 @@ class Object
   include FunctionalDefinitions::OperatorDefinitions
 end
 
-# puts FunctionalDefinitions.three
-# puts FunctionalDefinitions.three(plus(nine))
-puts FunctionalDefinitions.four(times(nine))
-puts FunctionalDefinitions.ninety(times(ninetynine))
+puts three
+puts three(plus(nine))
+puts four(times(nine))
+puts onehundred(times(ninetynine))
+puts one(plus(one))
+puts (one(minus(twelve))) + (two(plus(two)))
+puts eighty(divided_by(six))

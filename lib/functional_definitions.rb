@@ -8,9 +8,6 @@ module FunctionalDefinitions
   # or solve the equation using a send call.
   module OperandDefinitions
     (0..100).to_a.each do |i|
-      puts i
-      puts NumbersInWords.in_words(i)
-      puts NumbersInWords.in_words(i).gsub(' ', '').to_sym
       define_method(NumbersInWords.in_words(i).gsub(' ', '').to_sym) do |*args|
         if args.empty?
           return i
