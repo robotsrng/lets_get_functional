@@ -7,9 +7,7 @@ class Object
   include FunctionalDefinitions::OperatorDefinitions
 end
 
-
-def one_plus_two
-  3
-end
-
-FunctionalDefinitions.three
+# puts FunctionalDefinitions.three
+# puts FunctionalDefinitions.three(plus(nine))
+# puts FunctionalDefinitions.four(times(nine))
+puts FunctionalDefinitions.ninety(times(ninety nine))
