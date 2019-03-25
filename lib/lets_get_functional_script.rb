@@ -9,5 +9,5 @@ end
 
 # puts FunctionalDefinitions.three
 # puts FunctionalDefinitions.three(plus(nine))
-# puts FunctionalDefinitions.four(times(nine))
-puts FunctionalDefinitions.ninety(times(ninety nine))
+puts FunctionalDefinitions.four(times(nine))
+puts FunctionalDefinitions.ninety(times(ninetynine))

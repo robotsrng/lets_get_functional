@@ -8,15 +8,16 @@ module FunctionalDefinitions
   # or solve the equation using a send call.
   module OperandDefinitions
     (0..100).to_a.each do |i|
-      define_method(NumbersInWords.in_words(i).to_sym) do |*args|
+      puts i
+      puts NumbersInWords.in_words(i)
+      puts NumbersInWords.in_words(i).gsub(' ', '').to_sym
+      define_method(NumbersInWords.in_words(i).gsub(' ', '').to_sym) do |*args|
         if args.empty?
           return i
         elsif args.length > 1
           raise 'Invalid Arguments'
         else
-          puts args
-          puts [args[0][0], args[0][1]]
-          return i.send(args[0][0].to_sym, args[0][1])
+          return i.send(args[0].first.to_sym, args[0].last)
         end
       end
     end
