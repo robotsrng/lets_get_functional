@@ -1,9 +1,9 @@
 require 'rspec'
+require 'lets_get_functional_script'
+describe '#three' do
 
-describe 'My behaviour' do
+  it 'returns 3' do
 
-  it 'should do something' do
-
-    true.should == false
+    expect(three).to eq(3)
   end
 end
